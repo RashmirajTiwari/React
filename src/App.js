@@ -16,9 +16,12 @@ const App=()=>{
   //   React.createElement('h2',{},"Let's get started"),
   //   React.createElement(Expenses,{items:expenses})
   // );
+  const addExpensehandler=(expenses)=>{
+    console.log(expenses)
+  }
   return (
   <div>
-    <NewExpense/>
+    <NewExpense onAddExpenseData={addExpensehandler}/>
     <Expenses items={expenses}/>
   </div>
   );
